@@ -1,38 +1,31 @@
-$(document).ready(function(){
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+  const navToggle = document.querySelector(".fa-bars");
+  const navMenu = document.querySelector("nav ul");
 
-  $('.fa-bars').click(function(){
-    $(this).toggleClass('fa-times');
-    $('nav').toggleClass('nav-toggle');
+  navToggle.addEventListener("click", function() {
+    navMenu.classList.toggle("show");
+    navToggle.setAttribute(
+      "aria-expanded",
+      navMenu.classList.contains("show")
+    );
   });
-
-  $(window).on('scroll load',function(){
-    $('.fa-bars').removeClass('fa-times');
-    $('nav').removeClass('nav-toggle');
-  });
-
-  $('.count').each(function() {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
-    $({ countNum: $this.text()}).animate({
-      countNum: countTo
-    },
-    {
-      duration: 5000,
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum + '+');
-      }
-    });
-  });
-
-  $('.project').magnificPopup({
-    delegate:'a',
-    type:'image',
-    gallery:{
-      enabled:true
+});
+// script.js
+function animateCount(el) {
+  const target = +el.getAttribute("data-count");
+  let count = 0;
+  const step = Math.ceil(target / 100);
+  const interval = setInterval(() => {
+    count += step;
+    if (count >= target) {
+      el.textContent = target + "+";
+      clearInterval(interval);
+    } else {
+      el.textContent = count + "+";
     }
-  });
-
+  }, 16);
+}
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll(".count").forEach(animateCount);
 });
