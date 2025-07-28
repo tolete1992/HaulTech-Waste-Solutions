@@ -1,280 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- magnific popup css link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-    />
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
 
-    <!-- font awesome file link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
-    <!-- bootstrap file link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
-    />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" />
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-    <title>HaulTech Waste Solutions</title>
-  </head>
-  <body>
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
+  <title>HaulTech Waste Solutions</title>
+</head>
+<body>
+  <!-- Messenger Chat Plugin -->
+  <div id="fb-root"></div>
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
+  <!-- Header -->
+  <header class="header fixed-top" role="banner">
+    <a href="#home" class="logo" aria-label="HaulTech Home">
+      <h1 class="text1">HAULTECH WASTE SOLUTIONS</h1>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="fas fa-bars" aria-label="Open Navigation"></button>
+  </header>
 
-    <!-- header section starts  -->
-
-    <header class="header fixed-top">
-      <a href="#home" class="logo"><h1 class="text1">HAULTECH WASTE SOLUTIONS</h1></a>
-
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="fas fa-bars"></div>
-    </header>
-
-    <!-- header section ends -->
-
-    <!-- home section starts  -->
-
-    <section id="home" class="home container-fluid p-0">
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="home container-fluid p-0" aria-label="Home">
       <div class="row hero">
         <div class="col pl-3 ml-sm-5 p-0">
-          <h3 class="text2">HAULTECH WASTE SOLUTIONS</h3> 
+          <h2 class="text2">HAULTECH WASTE SOLUTIONS</h2> 
         </div>
       </div>
-      <div class="counting">
-
+      <div class="counting d-flex">
         <div class="box">
-          <h1 class="count" data-count="20">20+</h1>
-          <h3>clients</h3>
+          <h3 class="count" data-count="20">20+</h3>
+          <span>Clients</span>
         </div>
-
         <div class="box">
-          <h1 class="count" data-count="30">30+</h1>
-          <h3>sites</h3>
+          <h3 class="count" data-count="30">30+</h3>
+          <span>Sites</span>
         </div>
       </div>
     </section>
 
-    <!-- home section ends -->
-
-    <!-- about section starts  -->
-
-    <section id="about" class="about container">
-      <h1 class="heading">About Us</h1>
-
+    <!-- About Section -->
+    <section id="about" class="about container" aria-label="About Us">
+      <h2 class="heading">About Us</h2>
       <div class="row align-items-center">
         <div class="col-md-6 image">
-          <img src="/HaulTech Waste Solutions/company logo.png" width="90%" alt="HAULTECH WASTE SOLUTIONS" />
+          <img src="/HaulTech Waste Solutions/company logo.png" width="90%" alt="HaulTech Waste Solutions company logo" />
         </div>
-
         <div class="col-md-6 info">
-          <h2>The most cost-effective waste collector in Sydney</h2>
-          <section id="about-us" style="max-width: 800px; margin: 40px auto; font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-  <h2>About HaulTech Waste Solutions</h2>
-  <p>
-    HaulTech Waste Solutions is a budding startup on a mission to revolutionize waste management with smart, technology-driven solutions tailored for modern Sydney. We’re passionate about creating efficient, eco-friendly waste collection services that cater to the needs of residential and commercial clients alike.
-  </p>
-  <p>
-    As a startup, we embrace innovation and agility, constantly exploring smarter ways to reduce waste, promote recycling and streamline the entire waste handling process. Our goal is to build a sustainable business that not only meets today’s challenges but also anticipates the needs of tomorrow’s communities.
-  </p>
-  <p>
-    Join us on this journey to transform how waste is managed — because smart solutions start with fresh ideas and bold action.
-  </p>
-</section>
-
-
-
+          <h3>The most cost-effective waste collector in Sydney</h3>
+          <div id="about-us" class="mt-3" style="max-width: 800px; margin: 40px auto; line-height: 1.6;">
+            <p>
+              HaulTech Waste Solutions is a startup dedicated to revolutionizing waste management in Sydney. We offer technology-driven, eco-friendly collection tailored to both residential and commercial clients.
+            </p>
+            <p>
+              Our team is passionate about innovation, always looking for smarter ways to reduce waste, encourage recycling, and optimize the entire process. We build sustainable solutions for today's and tomorrow's communities.
+            </p>
+            <p>
+              Join us as we transform waste management — because smart solutions begin with bold ideas and action.
+            </p>
+          </div>
           <div class="icons">
-            <a
-              href="https://www.facebook.com/profile.php?id=61574988255494"
-              target="_blank"
-              class="fab fa-facebook-f"
-            ></a>
-            
-            
+            <a href="https://www.facebook.com/profile.php?id=61574988255494" target="_blank" aria-label="HaulTech Facebook" class="fab fa-facebook-f"></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- about section ends -->
-
-    <!-- service section starts  -->
-
-    <section id="service" class="service">
-      <h1 class="heading">Our Services</h1>
-
+    <!-- Services Section -->
+    <section id="service" class="service" aria-label="Our Services">
+      <h2 class="heading">Our Services</h2>
       <div class="box-container mx-auto">
-      
         <div class="box">
-          <h3 class="text2">Bulk Waste Collection</h3>
+          <h3>Bulk Waste Collection</h3>
           <p>
-            We provide reliable and efficient bulk waste collection solutions for residential and commercial clients. Our service handles large, bulky items responsibly and ensures safe, environmentally friendly disposal. With flexible scheduling and competitive pricing, we make managing oversized waste hassle-free and sustainable.
+            Reliable bulk waste collection for residential and commercial clients. We responsibly dispose of bulky items, offering flexible scheduling and competitive pricing.
           </p>
         </div>
-
         <div class="box">
-          <h3 class="text2">Construction Waste Collection</h3>
+          <h3>Construction Waste Collection</h3>
           <p>
-            We offer dependable construction waste collection tailored for builders, contractors, and developers. Our service efficiently handles debris, rubble, and materials from construction sites, ensuring responsible disposal and recycling where possible. With flexible scheduling and competitive rates, we simplify waste management for your projects while supporting sustainable building practices.
+            Tailored for builders and developers, our construction waste solution manages debris and materials with a focus on safety, timely removal, and sustainability.
           </p>
         </div>
-
         <div class="box">
-          <h3 class="text2">House & Office Waste Collection</h3>
+          <h3>House & Office Waste Collection</h3>
           <p>
-            We provide efficient and reliable waste collection solutions for homes and offices, managing everyday refuse with ease and professionalism. Our service ensures timely pickup, responsible disposal, and recycling initiatives that help keep your space clean and environmentally friendly. Flexible scheduling and tailored plans make waste management simple for your residential or workplace needs.
+            Efficient and reliable collection for homes and offices, ensuring timely pickup, responsible disposal, and an emphasis on recycling.
           </p>
         </div>
-
-
       </div>
     </section>
 
-    <!-- service section ends -->
-
-    <!-- project section starts   -->
-
-    <section id="project" class="project">
-      <div class="heading">Our Clients</div>
-
+    <!-- Projects/Clients Section -->
+    <section id="project" class="project" aria-label="Clients Projects">
+      <h2 class="heading">Our Clients</h2>
       <div class="box-container mx-auto">
-
         <div class="box">
           <a href="/HaulTech Waste Solutions/collect.jpg" title="River Vistas Site">
-            <img src="/HaulTech Waste Solutions/collect.jpg" alt="River Vistas Site" />
-            
+            <img src="/HaulTech Waste Solutions/collect.jpg" alt="River Vistas Site project" />
           </a>
         </div>
-
         <div class="box">
           <a href="/HaulTech Waste Solutions/driver-ampit.jpg" title="Phoenix Building">
-            <img src="/HaulTech Waste Solutions/driver-ampit.jpg" alt="Phoenix Building" />
+            <img src="/HaulTech Waste Solutions/driver-ampit.jpg" alt="Phoenix Building project" />
           </a>
         </div>
-
         <div class="box">
           <a href="/HaulTech Waste Solutions/Driver-Lito.jpg" title="Huxley South Site">
-            <img src="/HaulTech Waste Solutions/Driver-Lito.jpg" alt="Huxley South Site" />
+            <img src="/HaulTech Waste Solutions/Driver-Lito.jpg" alt="Huxley South Site project" />
           </a>
         </div>
       </div>
     </section>
 
-    <!-- project section ends -->
-
-    <!-- contact section starts  -->
-
-    <section id="contact" class="contact">
-      <h1 class="heading">Contact Us</h1>
-
-     
-
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-label="Contact Us">
+      <h2 class="heading">Contact Us</h2>
       <div class="form-container mx-auto">
         <form action="https://formsubmit.co/admin@haultechwaste.com.au" method="POST">
-  <input type="text" name="name" placeholder="Full Name" required />
-  <input type="email" name="email" placeholder="Email" required />
-  <textarea name="message" placeholder="Message" required></textarea>
-  <button type="submit">Send</button>
-</form>
-
+          <input type="text" name="name" placeholder="Full Name" required aria-label="Full Name" />
+          <input type="email" name="email" placeholder="Email" required aria-label="Email" />
+          <textarea name="message" placeholder="Message" required aria-label="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </section>
+  </main>
 
-    <!-- contact section ends -->
-
-    <!-- footer section starts  -->
-
-    <section class="container-fluid footer">
-      <div class="row">
-        
-
-        <div class="col-md-6">
-          <h2>HaulTech Waste Solutions</h2>
-          <div class="list">
-            <a>37a Chatres Street, St. Clair NSW 2759</a>
-            <a>ABN : 99 797 283 362</a>
-            <a>Ph: 0411460089</a>
-            <a>Email: admin@haultechwaste.com.au</a>
-            
-           
-          </div>
+  <!-- Footer -->
+  <footer class="container-fluid footer">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>HaulTech Waste Solutions</h3>
+        <address class="list">
+          <div>37a Chatres Street, St. Clair NSW 2759</div>
+          <div>ABN: 99 797 283 362</div>
+          <div>Ph: 0411460089</div>
+          <div>Email: <a href="mailto:admin@haultechwaste.com.au">admin@haultechwaste.com.au</a></div>
+        </address>
+      </div>
+      <div class="col-md-6">
+        <h3>👍 Like Us on Facebook</h3>
+        <div class="list">
+          <a href="https://www.facebook.com/profile.php?id=61574988255494" target="_blank">Facebook</a>
         </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <span class="credit">Created by <a href="https://www.facebook.com/PauLkode2021/" target="_blank">Paul Kode</a> | &copy; 2025 All rights reserved.</span>
+    </div>
+  </footer>
 
-        <div class="col-md-6">
-          <h2>👍 Like Us on Facebook</h2>
-          <div class="list">
-            <a href="https://www.facebook.com/profile.php?id=61574988255494" target="_blank">facebook</a>
-            
-           
-          </div>
-        </div>
+  <!-- Scripts Section -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Facebook Messenger Script -->
+  <script>
+    var chatbox = document.getElementById("fb-customer-chat");
+    chatbox.setAttribute("page_id", "112507347724873");
+    chatbox.setAttribute("attribution", "biz_inbox");
 
-        
+    window.fbAsyncInit = function () {
+      FB.init({ xfbml: true, version: "v11.0" });
+    };
 
-      <h1 class="credit">
-        Created by
-        <span
-          ><a href="https://www.facebook.com/PauLkode2021/" target="_blank"
-            >Paul Kode</a
-          ></span
-        >
-        | &copy; 2025 all rights reserved.
-      </h1>
-    </section>
-
-    <!-- footer section ends -->
-
-    <!-- jquery file link  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- magnific popup link  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
-    <!-- main/custom javascript file link  -->
-    <script src="script.js"></script>
-
-    <script>
-      var chatbox = document.getElementById("fb-customer-chat");
-      chatbox.setAttribute("page_id", "112507347724873");
-      chatbox.setAttribute("attribution", "biz_inbox");
-
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v11.0",
-        });
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-  </body>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+</body>
 </html>
